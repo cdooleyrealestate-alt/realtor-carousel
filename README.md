@@ -28,3 +28,25 @@ python3 scripts/package_plugin.py
 This produces `dist/realtor-visual-studio-1.1.0.zip` containing one plugin directory. The archive can be used in a supported private plugin import flow; storing source on GitHub does not install or publish it in ChatGPT.
 
 No creator-specific account IDs or credentials are included. Each user's destination configuration belongs in their own review workspace.
+
+## Faceless Reel Storyboard
+
+Source: [plugins/faceless-reel-storyboard](plugins/faceless-reel-storyboard)
+
+Version 1.0.0 delivers production instructions for clean professional 9:16 reels and stories:
+- Asks which AI app/editor the creator uses and requests the exact script.
+- Offers an authorized own voice clone, preset voice or original AI voice direction.
+- Plans every image/B-roll shot for 3–5 seconds.
+- Provides narration, per-scene prompts, verbatim captions and spoken-word highlighting instructions.
+- Revises timing from final narration audio; estimated timing is clearly marked.
+- Requests improvements to imagery, pacing, voice, captions, tone and CTA.
+
+This is a faceless format: no talking-head avatar. Word highlighting requires compatible editor features; standard SRT does not encode colour highlighting. Actual audio alignment and rendering depend on supported tools. It produces a production instruction pack, not a finished video.
+
+Invoke: "Create a 9:16 faceless reel storyboard. Ask which app I use, request my script and help me choose narration."
+
+Package this plugin:
+```bash
+python3 scripts/package_plugin.py faceless-reel-storyboard
+```
+The default command still packages Realtor Visual Studio. Both plugin source packages are independent.

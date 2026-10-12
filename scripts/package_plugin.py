@@ -1,10 +1,15 @@
-"""Package the plugin source without account data or build files."""
+"""Package a selected plugin source directory."""
+import argparse
 import json
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
 root = Path(__file__).resolve().parents[1]
-source = root / "plugins" / "realtor-visual-studio"
+parser = argparse.ArgumentParser()
+parser.add_argument("plugin", nargs="?", default="realtor-visual-studio",
+                    choices=["realtor-visual-studio", "faceless-reel-storyboard"])
+args = parser.parse_args()
+source = root / "plugins" / args.plugin
 manifest = json.loads((source / "plugin.json").read_text())
 assert manifest["name"] == source.name
 output = root / "dist" / (manifest["name"] + "-" + manifest["version"] + ".zip")

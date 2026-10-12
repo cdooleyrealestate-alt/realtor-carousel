@@ -1,0 +1,4 @@
+interface:
+  display_name: "Faceless Reel Storyboard"
+  short_description: "Plan vertical reels with narration and word captions"
+  default_prompt: "Create a clean 9:16 faceless reel storyboard from my script."

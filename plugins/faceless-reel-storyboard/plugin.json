@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "cdooleyrealestate@gmail.com",
+    "name": "Cindy Dooley"
+  },
+  "description": "App-adapted 9:16 faceless reel/story instructions with 3\u20135-second shots, voice choices and caption planning.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Create a 9:16 faceless reel storyboard. Ask which app I use, request my script and help me choose narration.",
+          "Revise my storyboard using final narration audio and align the caption plan.",
+          "Create a production instruction pack for my consulting client's faceless story."
+        ],
+        "developerName": "Cindy Dooley",
+        "displayName": "Faceless Reel Storyboard",
+        "longDescription": "Guide consulting clients and individuals from script and AI-app selection to a clean 9:16 faceless reel/story storyboard. Plan strict 3\u20135-second visuals, authorized own clone, preset or original voice direction, and verbatim word-highlighted captions. Recalculate from final audio. Production instructions; actual generation, alignment and rendering depend on app capabilities.",
+        "shortDescription": "Reels, voice and captions"
+      }
+    }
+  },
+  "name": "faceless-reel-storyboard",
+  "version": "1.0.0"
+}
