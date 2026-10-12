@@ -1,0 +1,4 @@
+interface:
+  display_name: "Realtor Visual Studio"
+  short_description: "Script to image batches and Airtable review"
+  default_prompt: "Turn my video script into an image batch and send it to Airtable."

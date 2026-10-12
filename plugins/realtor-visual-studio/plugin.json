@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "cdooleyrealestate@gmail.com",
+    "name": "Cindy Dooley"
+  },
+  "description": "Script-matched image batches with guided creator setup for Airtable, Notion or Google Sheets.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Create 10 images for my short-form script and send them to Airtable.",
+          "Create 20 images for my long-form script and send them to Airtable.",
+          "Read my Airtable selections and revise images using improvement notes."
+        ],
+        "developerName": "Cindy Dooley",
+        "displayName": "Realtor Visual Studio",
+        "longDescription": "Guide each realtor through creating or connecting their own Airtable, Notion or Google Sheets review workspace. Produce 10 short-form or 20 long-form images with ChatGPT image tools, track selections and versioned feedback. Requires connected tools for the chosen platform; chat-invoked, not unattended.",
+        "shortDescription": "Script to realtor images"
+      }
+    }
+  },
+  "name": "realtor-visual-studio",
+  "version": "1.1.0"
+}
